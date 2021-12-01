@@ -29,4 +29,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+.content {
+  margin-top: $nav-height;
+  padding: 15px;
+  height: 400vh;
+}
 </style>

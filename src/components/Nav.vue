@@ -11,4 +11,12 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+nav {
+  position: fixed;
+  width: 100%;
+  height: $nav-height;
+  background-color: red;
+  top: 0;
+}
+</style>
