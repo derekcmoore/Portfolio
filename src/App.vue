@@ -21,18 +21,39 @@ export default {
 body {
   padding: 0;
   margin: 0;
+  line-height: 1.5;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Andale Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
 
 .content {
-  margin-top: $nav-height;
-  padding: 15px;
-  height: 400vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #aaaaaa;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 </style>
