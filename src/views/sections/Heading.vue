@@ -28,7 +28,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.marginTop = document.getElementById("home").scrollTop * 1.4;
+      if (window.innerWidth >= 768)
+        this.marginTop = document.getElementById("home").scrollTop * 1.4;
+      else this.marginTop = 0;
     },
   },
 };
@@ -37,6 +39,10 @@ export default {
 <style scoped lang="scss">
 .section {
   height: 80vh;
+
+  @media (max-width: $responsive-width) {
+    height: 50vh;
+  }
 }
 
 .heading {
@@ -45,7 +51,7 @@ export default {
 
   &::after {
     background-image: url("~@/assets/img/heading-bg.svg");
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .heading-content {

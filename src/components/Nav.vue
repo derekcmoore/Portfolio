@@ -25,8 +25,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.scrolled = document.getElementById("home").scrollTop >= 286;
-      console.log(this.scrolled);
+      if (window.innerWidth >= 1000)
+        this.scrolled = document.getElementById("home").scrollTop >= 286;
+      else this.scrolled = document.getElementById("home").scrollTop >= 66;
     },
   },
 };
@@ -42,6 +43,7 @@ nav {
   top: 0;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: transparent;
   color: #ffffff;
   transition: background-color 0.1s ease;
   box-sizing: border-box;

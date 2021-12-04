@@ -30,11 +30,11 @@ export default {
     position: relative;
     max-width: 150px;
     max-height: 60px;
-    opacity: 0.3;
+    opacity: 0.4;
     filter: gray;
-    -webkit-filter: grayscale(0.5);
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    -webkit-filter: grayscale(0.95);
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(95%);
     cursor: pointer;
 
     @media (max-width: $responsive-width) {

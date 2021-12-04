@@ -85,10 +85,13 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateY(-40px) translateZ(-8px) scale(1.1);
+  transform: translateY(-40px) scale(1.1);
   transform-style: preserve-3d;
   background-size: cover;
   background-position: center;
   z-index: -1;
+  @media (max-width: $responsive-width) {
+    transform: unset;
+  }
 }
 </style>
