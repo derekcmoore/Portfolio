@@ -44,6 +44,7 @@ nav {
   padding-right: 30px;
   color: #ffffff;
   transition: background-color 0.1s ease;
+  box-sizing: border-box;
 
   &.scrolled {
     box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
@@ -62,6 +63,10 @@ nav {
       font-size: 40px;
       font-weight: 500;
       margin-right: 15px;
+
+      @media (max-width: $responsive-width) {
+        font-size: 1.5rem;
+      }
     }
 
     .occupation {
