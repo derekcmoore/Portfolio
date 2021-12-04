@@ -11,10 +11,10 @@
           <p>
             Through my internship opportunities and side projects I have
             developed a passion for Application Development and Software
-            Engineering. From learning Angular to developing a full stack
-            application using Ruby on Rails and Vue, I always want to stay ahead
-            of the game by learning new frameworks and technolgies in my free
-            time.
+            Engineering. From self teaching myself React to developing a full
+            stack application using Ruby on Rails and Vue, I always want to stay
+            ahead of the game by learning new frameworks and technolgies in my
+            free time.
           </p>
           <p>
             I am always striving to be the best version of myself through hard
@@ -51,7 +51,7 @@ export default {
 .section {
   background-image: radial-gradient(
     circle farthest-side at 65% bottom,
-    rgba(255, 201, 119, 0.6) 0,
+    rgba(255, 174, 0, 0.6) 0,
     transparent 70%
   );
 }
@@ -93,11 +93,11 @@ export default {
       .border {
         position: relative;
         box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
-        padding: 35px 35px 0 35px;
+        padding: 30px 30px 0 30px;
 
         img {
           max-height: 340px;
-          margin-bottom: -6.5px;
+          margin-bottom: -7px;
           @media (max-width: $responsive-width) {
             max-height: unset;
             width: 100%;
