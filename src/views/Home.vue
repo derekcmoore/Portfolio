@@ -5,6 +5,7 @@
     <About />
     <Projects />
     <Experience />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Skills from "./sections/Skills.vue";
 import About from "./sections/About.vue";
 import Projects from "./sections/Projects.vue";
 import Experience from "./sections/Experience.vue";
+import Footer from "./sections/Footer.vue";
 
 export default {
   name: "Home",
@@ -23,7 +25,7 @@ export default {
   },
   created() {},
   methods: {},
-  components: { Heading, Skills, About, Projects, Experience },
+  components: { Heading, Skills, About, Projects, Experience, Footer },
 };
 </script>
 
