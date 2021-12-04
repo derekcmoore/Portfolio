@@ -37,12 +37,10 @@ export default {
 nav {
   position: fixed;
   width: 100%;
-  padding: 25px 0px;
+  padding: 25px 30px;
   z-index: 9999;
   overflow-y: hidden;
   top: 0;
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: transparent;
   color: #ffffff;
   transition: background-color 0.1s ease;

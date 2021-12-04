@@ -18,11 +18,11 @@ export default {
 
 <style scoped lang="scss">
 .section {
-  background-image: linear-gradient(
-    177deg,
-    rgba(172, 11, 137, 0.2) 0,
-    transparent 65%
-  );
+  // background-image: linear-gradient(
+  //   177deg,
+  //   rgba(172, 11, 137, 0.2) 0,
+  //   transparent 65%
+  // );
   padding-top: 65px;
   padding-bottom: 80px;
 }
