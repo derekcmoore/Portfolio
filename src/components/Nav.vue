@@ -25,9 +25,11 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.innerWidth >= 1000)
-        this.scrolled = document.getElementById("home").scrollTop >= 286;
-      else this.scrolled = document.getElementById("home").scrollTop >= 66;
+      let skillPanel = document
+        .getElementsByClassName("skill-panel")[0]
+        .getBoundingClientRect().top;
+      if (window.innerWidth >= 1000) this.scrolled = skillPanel <= 100;
+      else this.scrolled = skillPanel <= 285;
     },
   },
 };

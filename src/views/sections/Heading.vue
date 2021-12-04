@@ -41,7 +41,7 @@ export default {
   height: 80vh;
 
   @media (max-width: $responsive-width) {
-    height: 50vh;
+    height: 65vh;
   }
 }
 
