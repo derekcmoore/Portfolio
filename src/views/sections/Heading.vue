@@ -64,7 +64,6 @@ export default {
       h1 {
         font-size: 1.5rem;
       }
-      margin-top: 25px;
     }
 
     .white {

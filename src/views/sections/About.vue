@@ -95,9 +95,14 @@ export default {
         box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
         padding: 30px 30px 0 30px;
 
+        @media (max-width: $responsive-width) {
+          padding: 20px 20px 0 20px;
+        }
+
         img {
           max-height: 340px;
           margin-bottom: -7px;
+
           @media (max-width: $responsive-width) {
             max-height: unset;
             width: 100%;
