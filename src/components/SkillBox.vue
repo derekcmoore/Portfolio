@@ -1,6 +1,6 @@
 <template>
   <div class="skill">
-    <img :src="require(`@/assets/img/${src}`)" alt="" />
+    <img :src="require(`@/assets/img/skills/${src}`)" alt="" />
   </div>
 </template>
 

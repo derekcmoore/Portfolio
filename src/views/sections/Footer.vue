@@ -12,6 +12,10 @@
             :src="'linkedin.svg'"
             :url="'https://www.linkedin.com/in/derek-c-moore/'"
           />
+          <SocialLink
+            :src="'github.svg'"
+            :url="'https://github.com/derekcmoore'"
+          />
         </div>
       </div>
     </div>
