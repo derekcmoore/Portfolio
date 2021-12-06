@@ -13,7 +13,7 @@
 import Heading from "./sections/Heading.vue";
 import Skills from "./sections/Skills.vue";
 import About from "./sections/About.vue";
-// import Projects from "./sections/Projects.vue";
+// import Projects from "./sections/Projects.vue"; TODO: Add projects page
 import Experience from "./sections/Experience.vue";
 import Footer from "./sections/Footer.vue";
 
