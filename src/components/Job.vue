@@ -11,7 +11,14 @@
 
     <div class="content">
       <ul>
-        <li v-for="(line, index) in content" :key="index">{{ line }}</li>
+        <li
+          v-scrollAnimation
+          v-for="(line, index) in content"
+          :key="index"
+          :style="{ '--i': index }"
+        >
+          {{ line }}
+        </li>
       </ul>
     </div>
   </div>
@@ -86,5 +93,17 @@ export default {
       }
     }
   }
+}
+
+.before-enter {
+  transform: translateX(-1em);
+  opacity: 0;
+}
+
+.enter {
+  opacity: 1;
+  transition: opacity 0.5s linear, transform 0.5s cubic-bezier(0.2, 0.5, 0.1, 1);
+  transition-delay: calc(0.1s * var(--i));
+  transform: translateX(0);
 }
 </style>
