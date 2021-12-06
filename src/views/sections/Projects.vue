@@ -2,14 +2,11 @@
   <section class="section static">
     <div class="projects section-wrapper">
       <h2 class="header">Projects</h2>
-      <!-- <table class="grid">
-        <tr>
-          <td><h2>Test Project</h2></td>
-          <td>test</td>
-          <td>test</td>
-        </tr>
-      </table> -->
-      coming soon
+      <div class="grid-list">
+        <div class="headline">From useful to fun applications I have built</div>
+        <div class="headline">From useful to fun applications I have built</div>
+        <div class="headline">From useful to fun applications I have built</div>
+      </div>
     </div>
   </section>
 </template>
@@ -33,6 +30,7 @@ export default {
   height: 100vh;
 
   .header {
+    margin-bottom: 65px;
     color: #4c96db;
 
     &::before {
@@ -40,14 +38,25 @@ export default {
     }
   }
 
-  .grid {
-    max-width: 1280px;
+  .grid-list {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    justify-content: space-evenly;
     width: 100%;
 
-    td {
-      width: calc(100% / 3);
+    .headline {
+      float: left;
+      width: calc(100% / 3 - 40px);
+      margin-left: 30px;
+      margin-top: 20px;
+      font-size: 30px;
+
+      @media (max-width: $responsive-width) {
+        width: calc(50% - 45px);
+      }
     }
   }
 }

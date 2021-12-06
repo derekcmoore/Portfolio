@@ -3,7 +3,7 @@
     <Heading />
     <Skills />
     <About />
-    <Projects />
+    <!-- <Projects /> -->
     <Experience />
     <Footer />
   </div>
