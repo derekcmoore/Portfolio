@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import SocialLink from "../../components/SocialLink.vue";
+import SocialLink from "../components/SocialLink.vue";
 
 export default {
   name: "Footer",

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Job from "../../components/Job.vue";
+import Job from "../components/Job.vue";
 
 export default {
   name: "Experience",

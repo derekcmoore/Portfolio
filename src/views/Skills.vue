@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import SkillBox from "../../components/SkillBox.vue";
+import SkillBox from "../components/SkillBox.vue";
 
 export default {
   name: "Skills",
