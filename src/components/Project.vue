@@ -1,5 +1,5 @@
 <template>
-  <div class="project"></div>
+  <div class="project" :style="style"></div>
 </template>
 
 <script>
@@ -8,6 +8,13 @@ export default {
   props: {
     src: String,
     content: Array,
+  },
+  data() {
+    return {
+      style: {
+        backgroundImage: `url("${require(`@/assets/img/projects/${this.src}`)}")`,
+      },
+    };
   },
   computed: {},
   components: {},
@@ -18,6 +25,7 @@ export default {
 <style scoped lang="scss">
 .project {
   float: left;
+  background-size: cover;
   width: calc(100% / 3 - 40px);
   margin-left: 30px;
   margin-top: 20px;

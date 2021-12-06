@@ -4,18 +4,19 @@
       <h2 class="header">Projects</h2>
       <div class="grid-list">
         <div class="headline">From useful to fun applications I have built</div>
-        <div class="headline">From useful to fun applications I have built</div>
-        <div class="headline">From useful to fun applications I have built</div>
+        <Project :src="'cornhacks.png'" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Project from "../../components/Project.vue";
+
 export default {
   name: "Projects",
   computed: {},
-  components: {},
+  components: { Project },
   methods: {},
 };
 </script>
