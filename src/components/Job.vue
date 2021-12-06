@@ -43,6 +43,7 @@ export default {
 
   .title {
     margin-bottom: 40px;
+
     img {
       max-width: 12em;
       max-height: 5em;
