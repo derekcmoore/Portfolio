@@ -18,10 +18,10 @@
           </p>
           <p>
             I am always striving to be the best version of myself through hard
-            work and self-motivation. I hope to have to have an impact on those
-            around me by developing a healthy work culture through my positive
-            outlook and work demeanor. I want to learn from and help my
-            teammates grow all while developing meaningful software.
+            work and self-motivation. I hope to have an impact on those around
+            me by developing a healthy work culture through my positive outlook
+            and work demeanor. I want to learn from my teammates and help them
+            grow all while developing meaningful software.
           </p>
         </div>
         <div class="headshot">
@@ -50,9 +50,9 @@ export default {
 <style scoped lang="scss">
 .section {
   background-image: radial-gradient(
-    circle farthest-side at 65% bottom,
-    rgba(255, 174, 0, 0.6) 0,
-    transparent 70%
+    circle farthest-side at 60% bottom,
+    rgba(255, 191, 108, 0.6) 0,
+    transparent 60%
   );
 }
 
