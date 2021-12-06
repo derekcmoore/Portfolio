@@ -9,19 +9,19 @@
       <div class="details">
         <div class="description">
           <p>
-            Through my internship opportunities and side projects I have
+            Through my internship opportunities and side projects, I have
             developed a passion for Application Development and Software
-            Engineering. From self teaching myself React to developing a full
-            stack application using Ruby on Rails and Vue, I always want to stay
-            ahead of the game by learning new frameworks and technolgies in my
-            free time.
+            Engineering. From self-teaching myself React to developing a
+            full-stack application using Ruby on Rails and Vue, I always want to
+            stay ahead of the game by learning new frameworks and technologies
+            in my free time.
           </p>
           <p>
             I am always striving to be the best version of myself through hard
-            work and self-motivation. I hope to have an impact on those around
-            me by developing a healthy work culture through my positive outlook
-            and work demeanor. I want to learn from my teammates and help them
-            grow all while developing meaningful software.
+            work and self-motivation. I hope to impact those around me by
+            developing a healthy work culture through my positive outlook and
+            work demeanor. I want to learn from my teammates and help them grow
+            while developing meaningful software along the way.
           </p>
         </div>
         <div class="headshot">
