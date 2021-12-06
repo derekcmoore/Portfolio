@@ -61,6 +61,8 @@ export default {
     text-align: center;
 
     @media (max-width: $responsive-width) {
+      margin-top: 50px;
+
       h1 {
         font-size: 1.5rem;
       }

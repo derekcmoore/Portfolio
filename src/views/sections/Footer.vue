@@ -16,6 +16,10 @@
             :src="'github.svg'"
             :url="'https://github.com/derekcmoore'"
           />
+          <SocialLink
+            :src="'instagram.svg'"
+            :url="'https://www.instagram.com/derekmoore66/'"
+          />
         </div>
       </div>
     </div>
