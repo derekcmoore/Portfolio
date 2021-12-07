@@ -22,8 +22,6 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.5;
-  height: 100%;
-  overflow: hidden;
 }
 
 #app {

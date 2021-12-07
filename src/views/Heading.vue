@@ -28,8 +28,11 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.innerWidth >= 768)
-        this.marginTop = document.getElementById("home").scrollTop * 1.4;
+      let title = document
+        .getElementsByClassName("heading")[0]
+        .getBoundingClientRect().top;
+
+      if (window.innerWidth >= 768) this.marginTop = title * -1.3;
       else this.marginTop = 0;
     },
   },
@@ -51,7 +54,7 @@ export default {
 
   &::after {
     background-image: url("~@/assets/img/heading-bg.svg");
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
   .heading-content {
@@ -61,8 +64,6 @@ export default {
     text-align: center;
 
     @media (max-width: $responsive-width) {
-      margin-top: 50px;
-
       h1 {
         font-size: 1.5rem;
       }
