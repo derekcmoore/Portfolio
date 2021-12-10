@@ -1,7 +1,7 @@
 <template>
-  <div class="social-link" @click="redirect()">
+  <a class="social-link" target="_blank" :href="url">
     <img :src="require(`@/assets/img/${src}`)" alt="" />
-  </div>
+  </a>
 </template>
 
 <script>
@@ -13,11 +13,7 @@ export default {
   },
   computed: {},
   components: {},
-  methods: {
-    redirect() {
-      window.open(this.url, "_blank").focus();
-    },
-  },
+  methods: {},
 };
 </script>
 
