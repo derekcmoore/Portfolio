@@ -9,7 +9,7 @@
       <div class="details">
         <div class="description">
           <p>
-            Through my internship opportunities and side projects, I have
+            Through my professional opportunities and side projects, I have
             developed a passion for Application Development and Software
             Engineering. From self-teaching myself React to developing a
             full-stack application using Ruby on Rails and Vue, I always want to
@@ -54,6 +54,14 @@ export default {
     rgba(255, 191, 108, 0.6) 0,
     transparent 60%
   );
+
+  @media (max-width: $responsive-width) {
+    background-image: radial-gradient(
+      circle farthest-side at 60% bottom,
+      rgba(255, 191, 107, 0.432) 0,
+      transparent 60%
+    );
+  }
 }
 
 .about {

@@ -55,6 +55,10 @@ export default {
   &::after {
     background-image: url("~@/assets/img/heading-bg.svg");
     background-attachment: fixed;
+
+    @media (max-width: $responsive-width) {
+      background-attachment: scroll;
+    }
   }
 
   .heading-content {
