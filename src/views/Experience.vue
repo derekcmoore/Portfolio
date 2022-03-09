@@ -25,8 +25,8 @@ export default {
   data() {
     return {
       nelnetTimeline: [
-        "Software Engineer at PaymentSpring, June 2021-Present",
-        "Software Engineering Intern at PaymentSpring, May 2020-June 2021",
+        "Software Engineer at PaymentSpring (Remote), June 2021-Present",
+        "Software Engineering Intern at PaymentSpring (Remote), May 2020-June 2021",
       ],
       nelnetContent: [
         "Rewrote an internal admin tool using Ruby on Rails and Vue.js, increasing end-user productivity by reworking the UI and back-end functionality",
