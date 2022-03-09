@@ -51,8 +51,8 @@ export default {
 .section {
   background-image: radial-gradient(
     circle farthest-side at 60% bottom,
-    rgba(255, 191, 108, 0.6) 0,
-    transparent 60%
+    rgba(255, 191, 108, 0.4) 0,
+    transparent 40%
   );
 
   @media (max-width: $responsive-width) {

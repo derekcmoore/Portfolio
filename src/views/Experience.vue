@@ -36,8 +36,8 @@ export default {
         "Led weekly meetings and discussions relating to progress and future product development of applications",
         "Kept continuous communication with product users to ensure feedback became properly implemented during development",
         "Implemented internationalization within multiple Rails applications",
-        "Rewrote the recurring payment scheduler to utilize AWS ECS scheduled tasks",
-        "Managed and led a team of engineers and business personnel during an innovation week",
+        "Refactored a recurring payment scheduler to utilize AWS ECS scheduled tasks",
+        "Directed a team of engineers and business personnel during an innovation week",
       ],
       dplTimeline: ["Software Engineering Intern, May 2019-August 2019"],
       dplContent: [
