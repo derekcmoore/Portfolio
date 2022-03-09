@@ -61,7 +61,7 @@ export default {
     padding-right: 30px;
     overflow-y: visible;
     position: relative;
-    color: #263238;
+    color: $font-color;
 
     .header {
       text-transform: uppercase;

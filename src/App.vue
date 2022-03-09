@@ -22,13 +22,14 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.5;
+  background-color: $off-white;
 }
 
 #app {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: $font-color;
 }
 
 .content {

@@ -46,7 +46,7 @@ export default {
   padding: 32px 15px;
   text-align: center;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: $white;
 
   .title {
     margin-bottom: 40px;

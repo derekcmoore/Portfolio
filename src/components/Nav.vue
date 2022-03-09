@@ -44,14 +44,14 @@ nav {
   overflow-y: hidden;
   top: 0;
   background-color: transparent;
-  color: #ffffff;
+  color: $white;
   transition: background-color 0.1s ease;
   box-sizing: border-box;
 
   &.scrolled {
     box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
-    background-color: #fff;
-    color: #2c3e50;
+    background-color: $white;
+    color: $font-color;
     height: auto;
   }
 

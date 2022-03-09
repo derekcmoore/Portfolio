@@ -10,7 +10,6 @@
           <SkillBox :src="'react.svg'" />
           <SkillBox :src="'python.svg'" />
           <SkillBox :src="'aws.svg'" />
-          <SkillBox :src="'cPlus.svg'" />
           <SkillBox :src="'cSharp.svg'" />
           <SkillBox :src="'dot-net-core.svg'" />
         </div>
@@ -44,7 +43,7 @@ export default {
   padding: 32px 10px;
   text-align: center;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: $white;
 
   h4 {
     font-size: 1.3rem;

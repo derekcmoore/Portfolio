@@ -2,12 +2,12 @@
   <section class="section static">
     <div class="about section-wrapper">
       <h2 class="header">About</h2>
-      <h2 class="headline">
+      <h2 class="headline" v-scrollAnimation>
         Developer with experience in full-stack application development with a
         passion for thoughtful UI design and usability.
       </h2>
       <div class="details">
-        <div class="description">
+        <div class="description" v-scrollAnimation>
           <p>
             Through my professional opportunities and side projects, I have
             developed a passion for Application Development and Software
@@ -78,6 +78,38 @@ export default {
   .headline {
     margin-top: 65px;
     margin-bottom: 65px;
+
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    animation-direction: reverse;
+    display: inline-block;
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    &.before-enter {
+      opacity: 0;
+    }
+
+    &.enter {
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
   }
 
   .details {
@@ -89,7 +121,7 @@ export default {
       left: 52%;
       right: auto;
       bottom: 0;
-      background-color: #ffffff;
+      background-color: $white;
       border-radius: 20px 20px 0 0;
 
       @media (max-width: $responsive-width) {
@@ -125,6 +157,18 @@ export default {
       @media (max-width: $responsive-width) {
         width: 100%;
         padding-bottom: 75%;
+      }
+
+      &.before-enter {
+        transform: translateX(-1em);
+        opacity: 0;
+      }
+
+      &.enter {
+        opacity: 1;
+        transition: opacity 1s linear,
+          transform 1.5s cubic-bezier(0.2, 0.5, 0.1, 1);
+        transform: translateX(0);
       }
     }
   }

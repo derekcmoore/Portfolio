@@ -76,11 +76,11 @@ export default {
     .white {
       padding: 0 0.15em;
       color: #092372;
-      background-color: #ffffff;
+      background-color: $white;
     }
 
     .underline {
-      border-bottom: 5px solid #ffffff;
+      border-bottom: 5px solid $white;
     }
   }
 }
