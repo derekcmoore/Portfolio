@@ -18,17 +18,31 @@ export default {
     return {};
   },
   components: {},
-  created() {},
-  methods: {},
+  created() {
+    window.addEventListener("scroll", this.handleScroll, true);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll, true);
+  },
+  methods: {
+    handleScroll() {
+      if (window.innerWidth >= 768) this.setMargin(window.pageYOffset);
+    },
+    setMargin(margin) {
+      document.getElementById("heading-text").style.marginTop = `${margin}px`;
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .section {
   height: 80vh;
+  min-height: 750px;
 
   @media (max-width: $responsive-width) {
     height: 65vh;
+    min-height: 500px;
   }
 }
 
@@ -48,6 +62,7 @@ export default {
     width: 100%;
     max-width: 1080px;
     text-align: center;
+    vertical-align: middle;
 
     @media (max-width: $responsive-width) {
       h1 {
@@ -65,7 +80,7 @@ export default {
 
       &.enter {
         box-shadow: 50vw 0 0 #fff inset, -50vw 0 0 #fff inset;
-        transition: box-shadow 2s;
+        transition: box-shadow 3s;
       }
     }
 
@@ -76,7 +91,7 @@ export default {
 
       &.enter {
         border-color: $white;
-        transition: border 2s;
+        transition: border 3s;
       }
     }
   }

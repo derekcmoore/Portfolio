@@ -31,12 +31,8 @@ export default {
 
 <style lang="scss">
 .wrapper {
-  height: 100vh;
-  height: -webkit-fill-available;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 4px;
-  transform-style: preserve-3d;
 }
 
 .section {

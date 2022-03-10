@@ -18,6 +18,7 @@ export default {
   },
   components: {},
   created() {
+    this.handleScroll();
     window.addEventListener("scroll", this.handleScroll, true);
   },
   destroyed() {
@@ -25,11 +26,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      let skillPanel = document
-        .getElementsByClassName("skill-panel")[0]
-        .getBoundingClientRect().top;
-      if (window.innerWidth >= 1000) this.scrolled = skillPanel <= 100;
-      else this.scrolled = skillPanel <= 285;
+      let skillPanel = window.pageYOffset;
+      if (window.innerWidth >= 1000) this.scrolled = skillPanel >= 460;
+      else this.scrolled = skillPanel >= 150;
     },
   },
 };
