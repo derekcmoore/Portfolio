@@ -41,17 +41,6 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  border: 1px solid rgba(0, 0, 0, 0);
-  background-clip: padding-box;
-  border-radius: 9999px;
-  background-color: #aaaaaa;
-}
-
 *,
 ::after,
 ::before {

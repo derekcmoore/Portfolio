@@ -65,10 +65,7 @@ export default {
 
   .header {
     color: #4cdb64;
-
-    &::before {
-      border-top: 4px solid #4cdb64;
-    }
+    border-top: 4px solid #4cdb64;
   }
 }
 </style>

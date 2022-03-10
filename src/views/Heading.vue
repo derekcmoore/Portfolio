@@ -18,24 +18,8 @@ export default {
     return {};
   },
   components: {},
-  created() {
-    window.addEventListener("scroll", this.handleScroll, true);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll, true);
-  },
-  methods: {
-    handleScroll() {
-      let title = document
-        .getElementsByClassName("heading")[0]
-        .getBoundingClientRect().top;
-
-      if (window.innerWidth >= 768) this.setMargin(title * -1.3);
-    },
-    setMargin(margin) {
-      document.getElementById("heading-text").style.marginTop = `${margin}px`;
-    },
-  },
+  created() {},
+  methods: {},
 };
 </script>
 

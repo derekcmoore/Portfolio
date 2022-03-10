@@ -69,32 +69,17 @@ export default {
       font-size: 1rem;
       letter-spacing: 0.08em;
       line-height: 1.5em;
-
-      &::before {
-        display: block;
-        content: " ";
-        width: 60px;
-        height: 10px;
-        transition: width 0.3s ease;
-      }
+      padding-top: 10px;
+      width: 60px;
     }
   }
 }
 
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateY(-40px) scale(1.1);
-  transform-style: preserve-3d;
-  background-size: cover;
+.parallax {
+  position: relative;
+  background-attachment: fixed;
   background-position: center;
-  z-index: -1;
-  @media (max-width: $responsive-width) {
-    transform: unset;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

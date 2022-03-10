@@ -33,10 +33,7 @@ export default {
   .header {
     margin-bottom: 65px;
     color: #4c96db;
-
-    &::before {
-      border-top: 4px solid #4c96db;
-    }
+    border-top: 4px solid #4c96db;
   }
 
   .grid-list {
