@@ -104,11 +104,13 @@ export default {
 
     &.before-enter {
       opacity: 0;
+      transform: translateY(-4em);
     }
 
     &.enter {
       opacity: 1;
-      transition: opacity 1s linear;
+      transition: opacity 1s linear, transform 2s cubic-bezier(0.2, 0.5, 0.1, 1);
+      transform: translateY(0);
     }
   }
 
@@ -160,14 +162,14 @@ export default {
       }
 
       &.before-enter {
-        transform: translateX(-1em);
+        transform: translateX(-4em);
         opacity: 0;
       }
 
       &.enter {
         opacity: 1;
         transition: opacity 1s linear,
-          transform 1.5s cubic-bezier(0.2, 0.5, 0.1, 1);
+          transform 2s cubic-bezier(0.2, 0.5, 0.1, 1);
         transform: translateX(0);
       }
     }

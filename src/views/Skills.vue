@@ -1,9 +1,9 @@
 <template>
   <section class="section static">
     <div class="section-wrapper">
-      <div class="skill-panel">
+      <div class="skill-panel" v-scrollAnimation>
         <h4>Languages &amp; Skills</h4>
-        <div class="skill-table">
+        <div class="skill-table" v-scrollAnimation>
           <SkillBox :src="'ruby-on-rails.svg'" />
           <SkillBox :src="'vue.svg'" />
           <SkillBox :src="'angular.svg'" />
@@ -47,7 +47,20 @@ export default {
 
   h4 {
     font-size: 1.3rem;
-    color: #9faaaf;
+    color: $grey;
+  }
+
+  &.before-enter {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+
+  &.enter {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    transition: all 1s ease;
   }
 }
 
@@ -56,5 +69,16 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+
+  &.before-enter {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.enter {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1.5s, opacity 2s linear;
+  }
 }
 </style>

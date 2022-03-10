@@ -1,10 +1,10 @@
 <template>
   <section class="heading section parallax">
-    <div class="heading-content" :style="{ 'padding-top': `${marginTop}px` }">
+    <div class="heading-content" id="heading-text">
       <h1>
-        I strive to <span class="white">enhance</span>
+        I strive to <span class="white" v-scrollAnimation>enhance</span>
         the lives of others
-        <span class="underline">through software</span>
+        <span class="underline" v-scrollAnimation>through software</span>
       </h1>
     </div>
   </section>
@@ -15,9 +15,7 @@ export default {
   name: "Heading",
   computed: {},
   data() {
-    return {
-      marginTop: 0,
-    };
+    return {};
   },
   components: {},
   created() {
@@ -32,8 +30,10 @@ export default {
         .getElementsByClassName("heading")[0]
         .getBoundingClientRect().top;
 
-      if (window.innerWidth >= 768) this.marginTop = title * -1.3;
-      else this.marginTop = 0;
+      if (window.innerWidth >= 768) this.setMargin(title * -1.3);
+    },
+    setMargin(margin) {
+      document.getElementById("heading-text").style.marginTop = `${margin}px`;
     },
   },
 };
@@ -52,13 +52,11 @@ export default {
   padding-left: 30px;
   padding-right: 30px;
 
-  &::after {
-    background-image: url("~@/assets/img/heading-bg.svg");
-    background-attachment: fixed;
+  background-image: url("~@/assets/img/heading-bg.svg");
+  background-attachment: fixed;
 
-    @media (max-width: $responsive-width) {
-      background-attachment: scroll;
-    }
+  @media (max-width: $responsive-width) {
+    background-attachment: scroll;
   }
 
   .heading-content {
@@ -76,11 +74,26 @@ export default {
     .white {
       padding: 0 0.15em;
       color: #092372;
-      background-color: $white;
+
+      &.before-enter {
+        box-shadow: 0 0 0 #fff inset, 0 0 0 #fff inset;
+      }
+
+      &.enter {
+        box-shadow: 50vw 0 0 #fff inset, -50vw 0 0 #fff inset;
+        transition: box-shadow 2s;
+      }
     }
 
     .underline {
-      border-bottom: 5px solid $white;
+      &.before-enter {
+        border-bottom: 5px solid transparent;
+      }
+
+      &.enter {
+        border-color: $white;
+        transition: border 2s;
+      }
     }
   }
 }
