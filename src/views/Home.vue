@@ -67,6 +67,17 @@ export default {
       line-height: 1.5em;
       padding-top: 10px;
       width: 60px;
+
+      &.before-enter {
+        opacity: 0;
+        width: 0px;
+      }
+
+      &.enter {
+        opacity: 1;
+        width: 60px;
+        transition: opacity 1s linear, width 1s ease-in;
+      }
     }
   }
 }

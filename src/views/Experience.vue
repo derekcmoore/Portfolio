@@ -1,7 +1,7 @@
 <template>
   <section class="section static">
     <div class="experience section-wrapper">
-      <h2 class="header">Experience</h2>
+      <h2 class="header" v-scrollAnimation>Experience</h2>
       <Job
         :src="'nelnet.png'"
         :timeline="nelnetTimeline"

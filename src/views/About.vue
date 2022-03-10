@@ -1,7 +1,7 @@
 <template>
   <section class="section static">
     <div class="about section-wrapper">
-      <h2 class="header">About</h2>
+      <h2 class="header" v-scrollAnimation>About</h2>
       <h2 class="headline" v-scrollAnimation>
         Developer with experience in full-stack application development with a
         passion for thoughtful UI design and usability.
