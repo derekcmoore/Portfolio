@@ -41,8 +41,7 @@ export default {
 .footer {
   position: relative;
   padding: 46px 30px 54px 30px;
-  background: #21292e;
-  color: $white;
+  color: $font-color;
 
   .content {
     max-width: 1280px;
@@ -71,7 +70,7 @@ export default {
 
     .socials {
       position: relative;
-      color: rgba(255, 255, 255, 0.6);
+      color: $font-color;
       width: 50%;
       text-align: right;
 

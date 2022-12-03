@@ -76,8 +76,8 @@ export default {
   width: 100%;
 
   .header {
-    color: #4cdb64;
-    border-top: 4px solid #4cdb64;
+    color: #44107a;
+    border-top: 4px solid #44107a;
   }
 }
 </style>

@@ -24,7 +24,7 @@
             while developing meaningful software along the way.
           </p>
         </div>
-        <div class="headshot">
+        <div class="headshot" v-scrollAnimation>
           <div class="border">
             <img src="@/assets/img/headshot.jpg" alt="" />
           </div>
@@ -48,28 +48,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.section {
-  background-image: radial-gradient(
-    circle farthest-side at 60% bottom,
-    rgba(255, 191, 108, 0.4) 0,
-    transparent 40%
-  );
-
-  @media (max-width: $responsive-width) {
-    background-image: radial-gradient(
-      circle farthest-side at 60% bottom,
-      rgba(255, 191, 107, 0.432) 0,
-      transparent 60%
-    );
-  }
-}
-
 .about {
   width: 100%;
 
   .header {
-    color: #e07f10;
-    border-top: 4px solid #e07f10;
+    color: #ff1361;
+    border-top: 4px solid #ff1361;
   }
 
   .headline {
@@ -117,35 +101,57 @@ export default {
 
     .headshot {
       position: absolute;
-      left: 52%;
+      left: 56%;
       right: auto;
       bottom: 0;
       background-color: $white;
-      border-radius: 20px 20px 0 0;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
+      transition: 0.5s linear;
+
+      &:hover {
+        transform: rotate(0deg) !important;
+      }
 
       @media (max-width: $responsive-width) {
         right: 0;
         bottom: 0;
         left: 0;
+        transform: rotate(0deg);
+        border-radius: 0px;
       }
 
       .border {
         position: relative;
-        box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
-        padding: 30px 30px 0 30px;
+        padding: 30px;
 
         @media (max-width: $responsive-width) {
-          padding: 20px 20px 0 20px;
+          padding: 20px;
         }
 
         img {
-          max-height: 340px;
-          margin-bottom: -7px;
+          max-height: 300px;
 
           @media (max-width: $responsive-width) {
             max-height: unset;
             width: 100%;
           }
+        }
+      }
+
+      &.before-enter {
+        transform: translateX(4em) rotate(0);
+        opacity: 0;
+      }
+
+      &.enter {
+        opacity: 1;
+        transition: opacity 1s linear,
+          transform 2s cubic-bezier(0.2, 0.5, 0.1, 1);
+        transform: translateX(0) rotate(5deg);
+
+        @media (max-width: $responsive-width) {
+          transform: translateX(0) rotate(0deg);
         }
       }
     }

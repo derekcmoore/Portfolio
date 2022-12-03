@@ -83,7 +83,7 @@ export default {
           content: "";
           height: 0.4em;
           width: 0.4em;
-          background: #4cdb64;
+          background: #44107a;
           display: block;
           position: absolute;
           transform: rotate(45deg);

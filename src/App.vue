@@ -22,7 +22,9 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.5;
-  background-color: $off-white;
+  background-color: #f5f2fc;
+  background-image: url("~@/assets/img/background.webp");
+  background-position: center;
 }
 
 #app {

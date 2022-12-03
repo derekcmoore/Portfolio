@@ -43,7 +43,7 @@ nav {
   overflow-y: hidden;
   top: 0;
   background-color: transparent;
-  color: $white;
+  color: $font-color;
   transition: background-color 0.1s ease;
   box-sizing: border-box;
 

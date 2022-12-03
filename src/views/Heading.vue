@@ -2,7 +2,7 @@
   <section class="heading section parallax">
     <div class="heading-content" id="heading-text">
       <h1>
-        I strive to <span class="white" v-scrollAnimation>enhance</span>
+        I strive to <span class="text-bg" v-scrollAnimation>enhance</span>
         the lives of others
         <span class="underline" v-scrollAnimation>through software</span>
       </h1>
@@ -49,9 +49,9 @@ export default {
 .heading {
   padding-left: 30px;
   padding-right: 30px;
-
   background-image: url("~@/assets/img/heading-bg.svg");
   background-attachment: fixed;
+  color: $font-color;
 
   @media (max-width: $responsive-width) {
     background-attachment: scroll;
@@ -70,16 +70,16 @@ export default {
       }
     }
 
-    .white {
+    .text-bg {
       padding: 0 0.15em;
-      color: #092372;
+      color: $white;
 
       &.before-enter {
-        box-shadow: 0 0 0 #fff inset, 0 0 0 #fff inset;
+        box-shadow: 0 0 0 $font-color inset, 0 0 0 $font-color inset;
       }
 
       &.enter {
-        box-shadow: 50vw 0 0 #fff inset, -50vw 0 0 #fff inset;
+        box-shadow: 50vw 0 0 $font-color inset, -50vw 0 0 $font-color inset;
         transition: box-shadow 3s;
       }
     }
@@ -90,7 +90,7 @@ export default {
       }
 
       &.enter {
-        border-color: $white;
+        border-color: $font-color;
         transition: border 3s;
       }
     }
