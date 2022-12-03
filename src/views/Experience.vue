@@ -2,6 +2,7 @@
   <section class="section static">
     <div class="experience section-wrapper">
       <h2 class="header" v-scrollAnimation>Experience</h2>
+      <Job :src="'sb2.png'" :timeline="sbTimeline" :content="sbContent" />
       <Job
         :src="'nelnet.png'"
         :timeline="nelnetTimeline"
@@ -24,9 +25,20 @@ export default {
   computed: {},
   data() {
     return {
+      sbTimeline: [
+        "Mid-Level Software Engineering (Remote), June 2022 - Present",
+      ],
+      sbContent: [
+        "Reconstructed the checkout experience and cross-selling of products",
+        "Established and continued communication with partners and customers when implementing changes",
+        "Co-led a discovery initiative in application questionnaires and processes",
+        "Developed new features and maintained multiple services and company gems",
+        "Regularly facilitated architecture discussions to ensure any changes followed company standards and best practices",
+        "Mentored two software engineers to ensure their proper career growth",
+        "Properly tested any code changes through Rspec and smoke tests",
+      ],
       nelnetTimeline: [
-        "Software Engineer at PaymentSpring (Remote), June 2021-Present",
-        "Software Engineering Intern at PaymentSpring (Remote), May 2020-June 2021",
+        "Software Engineer at PaymentSpring (Remote), May 2020 - June 2022",
       ],
       nelnetContent: [
         "Rewrote an internal admin tool using Ruby on Rails and Vue.js, increasing end-user productivity by reworking the UI and back-end functionality",
@@ -39,7 +51,7 @@ export default {
         "Refactored a recurring payment scheduler to utilize AWS ECS scheduled tasks",
         "Directed a team of engineers and business personnel during an innovation week",
       ],
-      dplTimeline: ["Software Engineering Intern, May 2019-August 2019"],
+      dplTimeline: ["Software Engineering Intern, May 2019 - August 2019"],
       dplContent: [
         "Developed a single solution using IDesign architecture principles",
         "Created a project management tool from the beginning using Angular and ASP.NET Core",

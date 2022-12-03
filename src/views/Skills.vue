@@ -6,8 +6,8 @@
         <div class="skill-table" v-scrollAnimation>
           <SkillBox :src="'ruby-on-rails.svg'" />
           <SkillBox :src="'vue.svg'" />
-          <SkillBox :src="'angular.svg'" />
           <SkillBox :src="'react.svg'" />
+          <SkillBox :src="'angular.svg'" />
           <SkillBox :src="'python.svg'" />
           <SkillBox :src="'aws.svg'" />
           <SkillBox :src="'cSharp.svg'" />
