@@ -26,7 +26,8 @@ export default {
   data() {
     return {
       sbTimeline: [
-        "Mid-Level Software Engineering (Remote), June 2022 - Present",
+        "Mid-Level Software Engineer (Remote), June 2022 - December 2022",
+        "Senior Software Engineer (Remote), December 2022 - Present"
       ],
       sbContent: [
         "Reconstructed the checkout experience and cross-selling of products",
