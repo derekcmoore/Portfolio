@@ -25,17 +25,16 @@ export default {
   computed: {},
   data() {
     return {
-      sbTimeline: [
-        "Mid-Level Software Engineer (Remote), June 2022 - December 2022",
-        "Senior Software Engineer (Remote), December 2022 - Present"
-      ],
+      sbTimeline: ["Senior Software Engineer (Remote), June 2022 - Present"],
       sbContent: [
         "Reconstructed the checkout experience and cross-selling of products",
         "Established and continued communication with partners and customers when implementing changes",
         "Co-led a discovery initiative in application questionnaires and processes",
+        "Implemented A/B testing framework and conducted tests to determine customer impact and conversion rates",
+        "Aided in the hiring process by conducting technical and cultural fit interviews",
         "Developed new features and maintained multiple services and company gems",
         "Regularly facilitated architecture discussions to ensure any changes followed company standards and best practices",
-        "Mentored two software engineers to ensure their proper career growth",
+        "Mentored over five software engineers to ensure their proper career growth",
         "Properly tested any code changes through Rspec and smoke tests",
       ],
       nelnetTimeline: [
