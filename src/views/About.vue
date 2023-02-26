@@ -62,10 +62,10 @@ export default {
 
     background-image: linear-gradient(
       -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
+      #8264f8 0%,
+      #8b6ef4 29%,
+      #ef698b 67%,
+      #f672a6 100%
     );
     background-clip: border-box;
     background-size: 200% auto;
@@ -106,7 +106,7 @@ export default {
       bottom: 0;
       background-color: $white;
       border-radius: 20px;
-      box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
+      box-shadow: $main-box-shadow;
       transition: 0.5s linear;
 
       &:hover {
@@ -115,9 +115,10 @@ export default {
 
       @media (max-width: $responsive-width) {
         right: 0;
-        bottom: 0;
+        bottom: -10px;
         left: 0;
         transform: rotate(0deg);
+        box-shadow: $main-box-shadow-mobile;
         border-radius: 0px;
       }
 
@@ -142,6 +143,10 @@ export default {
       &.before-enter {
         transform: translateX(4em) rotate(0);
         opacity: 0;
+
+        @media (max-width: $responsive-width) {
+          transform: translateY(4em) rotate(0);
+        }
       }
 
       &.enter {

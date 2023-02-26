@@ -30,11 +30,11 @@ export default {
     position: relative;
     max-width: 150px;
     max-height: 60px;
-    opacity: 0.4;
+    opacity: 0.5;
     filter: gray;
-    -webkit-filter: grayscale(0.65);
-    -webkit-filter: grayscale(65%);
-    filter: grayscale(65%);
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     cursor: pointer;
 
     @media (max-width: $responsive-width) {
@@ -43,11 +43,10 @@ export default {
       filter: none;
       -webkit-filter: none;
       -webkit-filter: none;
-      opacity: 1;
+      // opacity: 1;
     }
 
     &:hover {
-      opacity: 1;
       filter: none;
       -webkit-filter: grayscale(0);
     }

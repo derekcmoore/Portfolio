@@ -39,11 +39,17 @@ export default {
   top: -80px;
   z-index: 9997;
 
-  box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
+  box-shadow: rgb(252, 239, 245) 10px -10px, rgb(255, 238, 184) 20px -20px,
+    rgb(248, 194, 216) 30px -30px, rgb(241, 179, 195) 40px -40px;
   padding: 32px 10px;
   text-align: center;
   border-radius: 20px;
   background-color: $white;
+
+  @media (max-width: $responsive-width) {
+    box-shadow: rgb(252, 239, 245) 0px 10px, rgb(255, 238, 184) 0px 20px,
+      rgb(248, 194, 216) 0px 30px, rgb(241, 179, 195) 0px 40px;
+  }
 
   h4 {
     font-size: 1.3rem;

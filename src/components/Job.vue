@@ -41,12 +41,16 @@ export default {
 <style scoped lang="scss">
 .job {
   position: relative;
-  box-shadow: 0 12px 30px 0 rgb(0 0 0 / 15%);
+  box-shadow: $main-box-shadow;
   margin-top: 100px;
   padding: 32px 15px;
   text-align: center;
   border-radius: 20px;
   background-color: $white;
+
+  @media (max-width: $responsive-width) {
+    box-shadow: $main-box-shadow-mobile;
+  }
 
   .title {
     margin-bottom: 40px;
