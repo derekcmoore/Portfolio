@@ -15,7 +15,9 @@ export default {
   name: "Heading",
   computed: {},
   data() {
-    return {};
+    return {
+      titleElement: null,
+    };
   },
   components: {},
   created() {
@@ -26,10 +28,13 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.innerWidth >= 768) this.setMargin(window.pageYOffset);
+      if (window.innerWidth >= 768) this.setMargin();
     },
-    setMargin(margin) {
-      document.getElementById("heading-text").style.marginTop = `${margin}px`;
+    setMargin() {
+      if (!this.titleElement) {
+        this.titleElement = document.getElementById("heading-text");
+      }
+      this.titleElement.style.marginTop = `${window.scrollY}px`;
     },
   },
 };
