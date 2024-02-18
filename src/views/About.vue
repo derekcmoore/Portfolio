@@ -107,9 +107,6 @@ export default {
       background-color: $white;
       border-radius: 20px;
       box-shadow: $main-box-shadow;
-      transition: 0.5s linear;
-      -webkit-transition: background-color 0.25s ease-in;
-      transition: background-color 0.25s ease-in;
 
       &:hover {
         transform: rotate(0deg) !important;
@@ -154,7 +151,7 @@ export default {
       &.enter {
         opacity: 1;
         transition: opacity 1s linear,
-          transform 2s cubic-bezier(0.2, 0.5, 0.1, 1);
+          transform 2s cubic-bezier(0.2, 0.5, 0.1, 1), 0.25s ease-in;
         transform: translateX(0) rotate(5deg);
 
         @media (max-width: $responsive-width) {

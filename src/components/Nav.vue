@@ -4,10 +4,15 @@
       <div class="title">Derek Moore</div>
       <div class="occupation">Software Engineer</div>
     </div>
+    <div class="toggle-wrapper">
+      <ToggleSlider @toggle="toggleDarkMode($event)" />
+    </div>
   </nav>
 </template>
 
 <script>
+import ToggleSlider from "@/components/ToggleSlider.vue";
+
 export default {
   name: "Nav",
   computed: {},
@@ -16,7 +21,7 @@ export default {
       scrolled: false,
     };
   },
-  components: {},
+  components: { ToggleSlider },
   created() {
     this.handleScroll();
     window.addEventListener("scroll", this.handleScroll, true);
@@ -30,6 +35,11 @@ export default {
       if (window.innerWidth >= 1000) this.scrolled = skillPanel >= 460;
       else this.scrolled = skillPanel >= 150;
     },
+    toggleDarkMode(event) {
+      console.log("toggle dark mode");
+      if (event) document.documentElement.className = "dark";
+      else document.documentElement.className = "";
+    },
   },
 };
 </script>
@@ -37,6 +47,8 @@ export default {
 <style scoped lang="scss">
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 25px 30px;
   z-index: 9999;
@@ -48,15 +60,13 @@ nav {
   box-sizing: border-box;
 
   &.scrolled {
-    box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
+    box-shadow: 0 3px 8px rgb($black-rgb / 0.15);
     background-color: $white;
     color: $font-color;
     height: auto;
   }
 
   .nav-content {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1280px;
 
     .title {
@@ -73,6 +83,11 @@ nav {
     .occupation {
       display: inline-block;
     }
+  }
+
+  .toggle-wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 </style>

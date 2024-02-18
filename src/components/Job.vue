@@ -47,6 +47,8 @@ export default {
   text-align: center;
   border-radius: 20px;
   background-color: $white;
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
 
   @media (max-width: $responsive-width) {
     box-shadow: $main-box-shadow-mobile;
