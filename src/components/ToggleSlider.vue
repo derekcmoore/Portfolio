@@ -1,6 +1,12 @@
 <template>
   <div>
-    <input type="checkbox" class="checkbox" id="checkbox" @change="toggle()" />
+    <input
+      type="checkbox"
+      v-model="toggled"
+      class="checkbox"
+      id="checkbox"
+      @change="toggle()"
+    />
     <label for="checkbox" class="checkbox-label">
       <img :src="require(`@/assets/img/icons/moon.svg`)" alt="" class="moon" />
       <img :src="require(`@/assets/img/icons/sun.svg`)" alt="" class="sun" />
@@ -12,10 +18,13 @@
 <script>
 export default {
   name: "ToggleSlider",
+  props: {
+    is_toggled: Boolean,
+  },
   computed: {},
   data() {
     return {
-      is_toggled: false,
+      toggled: this.is_toggled,
     };
   },
   components: {},
@@ -23,8 +32,7 @@ export default {
   destroyed() {},
   methods: {
     toggle() {
-      this.is_toggled = !this.is_toggled;
-      this.$emit("toggle", this.is_toggled);
+      this.$emit("toggle", this.toggled);
     },
   },
 };

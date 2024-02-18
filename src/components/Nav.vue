@@ -5,26 +5,31 @@
       <div class="occupation">Software Engineer</div>
     </div>
     <div class="toggle-wrapper">
-      <ToggleSlider @toggle="toggleDarkMode($event)" />
+      <ToggleSlider :is_toggled="is_toggled" @toggle="toggleDarkMode($event)" />
     </div>
   </nav>
 </template>
 
 <script>
 import ToggleSlider from "@/components/ToggleSlider.vue";
+import CookiesMixin from "@/helpers/cookies.js";
 
 export default {
   name: "Nav",
   computed: {},
+  mixins: [CookiesMixin],
   data() {
     return {
       scrolled: false,
+      is_toggled: false,
     };
   },
   components: { ToggleSlider },
   created() {
     this.handleScroll();
     window.addEventListener("scroll", this.handleScroll, true);
+
+    this.toggleDarkMode(this.getCookie("dark-mode") === "true");
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll, true);
@@ -35,10 +40,14 @@ export default {
       if (window.innerWidth >= 1000) this.scrolled = skillPanel >= 460;
       else this.scrolled = skillPanel >= 150;
     },
-    toggleDarkMode(event) {
-      console.log("toggle dark mode");
-      if (event) document.documentElement.className = "dark";
-      else document.documentElement.className = "";
+    toggleDarkMode(toggle) {
+      this.is_toggled = toggle;
+      this.setCookie("dark-mode", this.is_toggled);
+      if (this.is_toggled) {
+        document.documentElement.className = "dark";
+      } else {
+        document.documentElement.className = "";
+      }
     },
   },
 };
