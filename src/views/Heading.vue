@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.innerWidth >= 768) this.setMargin();
+      this.setMargin();
     },
     setMargin() {
       if (!this.titleElement) {

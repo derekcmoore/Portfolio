@@ -37,8 +37,9 @@ export default {
   methods: {
     handleScroll() {
       let skillPanel = window.pageYOffset;
-      if (window.innerWidth >= 1000) this.scrolled = skillPanel >= 460;
-      else this.scrolled = skillPanel >= 150;
+      if (window.innerWidth >= 769) this.scrolled = skillPanel >= 460;
+      if (window.innerWidth <= 387) this.scrolled = skillPanel >= 180;
+      else this.scrolled = skillPanel >= 320;
     },
     toggleDarkMode(toggle) {
       this.is_toggled = toggle;
