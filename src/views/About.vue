@@ -69,7 +69,7 @@ export default {
     );
     background-clip: border-box;
     background-size: 200% auto;
-    color: #fff;
+    color: $white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -108,6 +108,8 @@ export default {
       border-radius: 20px;
       box-shadow: $main-box-shadow;
       transition: 0.5s linear;
+      -webkit-transition: background-color 0.25s ease-in;
+      transition: background-color 0.25s ease-in;
 
       &:hover {
         transform: rotate(0deg) !important;

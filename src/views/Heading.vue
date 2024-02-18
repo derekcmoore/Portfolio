@@ -54,9 +54,12 @@ export default {
 .heading {
   padding-left: 30px;
   padding-right: 30px;
-  background-image: url("~@/assets/img/heading-bg.svg");
+  background-image: $heading-bg;
   background-attachment: fixed;
   color: $font-color;
+
+  -webkit-transition: background-image 0.25s ease-in;
+  transition: background-image 0.25s ease-in;
 
   @media (max-width: $responsive-width) {
     background-attachment: scroll;
