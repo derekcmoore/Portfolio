@@ -58,13 +58,6 @@ export default {
   background-attachment: fixed;
   color: $font-color;
 
-  -webkit-transition: background-image 0.25s ease-in;
-  transition: background-image 0.25s ease-in;
-
-  @media (max-width: $responsive-width) {
-    background-attachment: scroll;
-  }
-
   .heading-content {
     position: relative;
     width: 100%;
