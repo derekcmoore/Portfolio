@@ -37,7 +37,7 @@ export default {
   --white: #151515;
   --off-white: #202124;
   --font-color: #bdc1c6;
-  --grey: #494e50;
+  --grey: #6f7476;
   --main-box-shadow: none;
   --main-box-shadow-mobile: none;
   --heading-bg: url("~@/assets/img/heading-bg-dark.svg");
