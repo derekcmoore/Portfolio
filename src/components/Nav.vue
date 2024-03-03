@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{ scrolled: scrolled }">
+  <nav :class="{ scrolled: scrolled }" id="nav">
     <div class="nav-content">
       <div class="title">Derek Moore</div>
       <div class="occupation">Software Engineer</div>
@@ -36,10 +36,8 @@ export default {
   },
   methods: {
     handleScroll() {
-      let skillPanel = window.pageYOffset;
-      if (window.innerWidth >= 769) this.scrolled = skillPanel >= 460;
-      if (window.innerWidth <= 387) this.scrolled = skillPanel >= 180;
-      else this.scrolled = skillPanel >= 320;
+      let distance = this.getRelativeScrollHeight();
+      this.scrolled = distance <= 0;
     },
     toggleDarkMode(toggle) {
       this.is_toggled = toggle;
@@ -48,6 +46,17 @@ export default {
         document.documentElement.className = "dark";
       } else {
         document.documentElement.className = "";
+      }
+    },
+    getRelativeScrollHeight() {
+      let nav = document.getElementById("nav");
+      let headingText = document.getElementById("heading-text");
+      if (headingText && nav) {
+        let headingPosition = headingText.getBoundingClientRect().top + window.scrollY;
+        let navPosition = nav.getBoundingClientRect().bottom + window.scrollY;
+        return headingPosition - navPosition;
+      } else {
+        return 100;
       }
     },
   },

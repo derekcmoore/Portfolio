@@ -42,6 +42,7 @@ export default {
   position: relative;
   padding: 46px 30px 54px 30px;
   color: $font-color;
+  background-color: $off-white;
 
   .content {
     max-width: 1280px;

@@ -33,6 +33,14 @@ export default {
 .wrapper {
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+
+  background-image: $heading-bg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section {
@@ -41,13 +49,7 @@ export default {
   align-items: center;
   justify-content: center;
   color: white;
-
-  &.static {
-    align-items: normal;
-    justify-content: left;
-    max-width: 1800px;
-    margin: 0 auto;
-  }
+  background-color: $off-white;
 
   .section-wrapper {
     max-width: 1300px;
@@ -84,9 +86,14 @@ export default {
 
 .parallax {
   position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
 }
 </style>

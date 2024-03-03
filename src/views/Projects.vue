@@ -1,5 +1,5 @@
 <template>
-  <section class="section static">
+  <section class="section">
     <div class="projects section-wrapper">
       <h2 class="header">Projects</h2>
       <div class="grid-list">

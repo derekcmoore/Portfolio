@@ -1,5 +1,5 @@
 <template>
-  <section class="section static">
+  <section class="section">
     <div class="about section-wrapper">
       <h2 class="header" v-scrollAnimation>About</h2>
       <h2 class="headline" v-scrollAnimation>

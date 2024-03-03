@@ -1,5 +1,5 @@
 <template>
-  <section class="section static">
+  <section class="section">
     <div class="section-wrapper">
       <div class="skill-panel" v-scrollAnimation>
         <h4>Languages &amp; Skills</h4>

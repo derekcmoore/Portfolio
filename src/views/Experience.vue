@@ -1,5 +1,5 @@
 <template>
-  <section class="section static">
+  <section class="section">
     <div class="experience section-wrapper">
       <h2 class="header" v-scrollAnimation>Experience</h2>
       <Job :src="'sb2.png'" :timeline="sbTimeline" :content="sbContent" />
