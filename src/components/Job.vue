@@ -74,6 +74,10 @@ export default {
       margin: 2em;
       padding: 0;
 
+      @media (max-width: $responsive-width) {
+        margin: 1em;
+      }
+
       li {
         position: relative;
         margin: 0;
