@@ -25,6 +25,7 @@ export default {
   --grey: #494e50;
   --heading-bg: url("~@/assets/img/heading-bg.svg");
   --black-rgb: 0 0 0;
+  --image-filter: none;
 }
 
 :root.dark {
@@ -34,6 +35,7 @@ export default {
   --grey: #6f7476;
   --heading-bg: url("~@/assets/img/heading-bg-dark.svg");
   --black-rgb: 256 256 256;
+  --image-filter: invert(35%);
 }
 
 body {

@@ -30,10 +30,10 @@ export default {
     position: relative;
     max-width: 150px;
     max-height: 60px;
-    opacity: 0.5;
-    -webkit-filter: grayscale(1);
-    -webkit-filter: grayscale(100%) invert(35%);
-    filter: grayscale(100%) invert(25%);
+    opacity: 0.7;
+    -webkit-filter: $image-filter;
+    -webkit-filter: $image-filter;
+    filter: $image-filter;
   }
 }
 </style>
