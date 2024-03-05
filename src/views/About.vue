@@ -52,8 +52,8 @@ export default {
   width: 100%;
 
   .header {
-    color: #ff1361;
-    border-top: 4px solid #ff1361;
+    color: #176efa;
+    border-top: 4px solid #176efa;
   }
 
   .headline {
@@ -62,8 +62,8 @@ export default {
 
     background-image: linear-gradient(
       -225deg,
-      #8264f8 0%,
-      #8b6ef4 29%,
+      #3c38f5 0%,
+      #666efe 29%,
       #ef698b 67%,
       #f672a6 100%
     );
@@ -106,7 +106,7 @@ export default {
       bottom: 0;
       background-color: $white;
       border-radius: 20px;
-      box-shadow: $main-box-shadow;
+      z-index: 10;
 
       &:hover {
         transform: rotate(0deg) !important;
@@ -117,7 +117,6 @@ export default {
         bottom: -10px;
         left: 0;
         transform: rotate(0deg);
-        box-shadow: $main-box-shadow-mobile;
         border-radius: 0px;
       }
 

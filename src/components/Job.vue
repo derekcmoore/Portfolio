@@ -41,7 +41,6 @@ export default {
 <style scoped lang="scss">
 .job {
   position: relative;
-  box-shadow: $main-box-shadow;
   margin-top: 100px;
   padding: 32px 15px;
   text-align: center;
@@ -49,10 +48,6 @@ export default {
   background-color: $white;
   -webkit-transition: 0.25s ease-in;
   transition: 0.25s ease-in;
-
-  @media (max-width: $responsive-width) {
-    box-shadow: $main-box-shadow-mobile;
-  }
 
   .title {
     margin-bottom: 40px;
@@ -89,7 +84,7 @@ export default {
           content: "";
           height: 0.4em;
           width: 0.4em;
-          background: #5916a2;
+          background: #6f27bb;
           display: block;
           position: absolute;
           transform: rotate(45deg);

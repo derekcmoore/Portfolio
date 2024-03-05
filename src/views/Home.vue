@@ -50,6 +50,8 @@ export default {
   justify-content: center;
   color: white;
   background-color: $off-white;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 
   .section-wrapper {
     max-width: 1300px;

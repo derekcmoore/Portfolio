@@ -42,8 +42,8 @@ export default {
   text-align: center;
   border-radius: 20px;
   background-color: $white;
-  -webkit-transition: background-color 0.25s ease-in;
-  transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 
   h4 {
     font-size: 1.3rem;

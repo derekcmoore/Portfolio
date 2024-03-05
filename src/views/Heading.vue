@@ -41,6 +41,8 @@ export default {
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
+  transition: color 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in;
 
   @media (max-width: $responsive-width) {
     h1 {
@@ -69,7 +71,7 @@ export default {
 
     &.enter {
       border-color: $font-color;
-      transition: border 3s;
+      transition: border 1s;
     }
   }
 }
