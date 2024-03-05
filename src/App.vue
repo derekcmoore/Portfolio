@@ -42,9 +42,13 @@ body {
   line-height: 1.5;
   background-color: $off-white;
   background-position: center;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 
   -webkit-transition: background-color 0.1s ease-in;
   transition: background-color 0.1s ease-in;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #app {

@@ -32,8 +32,9 @@ export default {
 <style lang="scss">
 .wrapper {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100vh;
+  max-height: -webkit-fill-available;
   -webkit-perspective: 300px;
   perspective: 300px;
 

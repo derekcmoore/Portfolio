@@ -76,8 +76,6 @@ export default {
       text-align: right;
 
       .icons {
-        position: absolute;
-        right: 0;
         margin-top: 10px;
       }
     }
