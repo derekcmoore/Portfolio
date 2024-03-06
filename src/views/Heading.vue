@@ -43,9 +43,10 @@ export default {
   z-index: 3;
   transition: color 0.1s ease-in;
   -webkit-transition: color 0.1s ease-in;
+  h1 {
+    font-weight: 500;
 
-  @media (max-width: $responsive-width) {
-    h1 {
+    @media (max-width: $responsive-width) {
       font-size: 1.5rem;
     }
   }

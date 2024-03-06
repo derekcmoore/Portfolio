@@ -63,6 +63,7 @@ export default {
     .timeline {
       margin-top: 15px;
       color: $grey;
+      font-weight: 500;
     }
   }
 

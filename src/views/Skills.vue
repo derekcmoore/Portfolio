@@ -48,6 +48,7 @@ export default {
   h4 {
     font-size: 1.3rem;
     color: $grey;
+    font-weight: 600;
   }
 
   &.before-enter {

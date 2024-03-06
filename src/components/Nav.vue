@@ -91,7 +91,7 @@ nav {
     .title {
       display: inline-block;
       font-size: 40px;
-      font-weight: 500;
+      font-weight: 300;
       margin-right: 15px;
 
       @media (max-width: $responsive-width) {
@@ -101,6 +101,7 @@ nav {
 
     .occupation {
       display: inline-block;
+      font-weight: 300;
     }
   }
 

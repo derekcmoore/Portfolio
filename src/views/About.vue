@@ -76,6 +76,7 @@ export default {
     animation: textclip 6s linear infinite;
     animation-direction: reverse;
     display: inline-block;
+    font-weight: 500;
 
     @keyframes textclip {
       to {
