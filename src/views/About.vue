@@ -24,11 +24,6 @@
             while developing meaningful software along the way.
           </p>
         </div>
-        <div class="headshot" v-scrollAnimation>
-          <div class="border">
-            <img src="@/assets/img/headshot.jpg" alt="" />
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -97,71 +92,8 @@ export default {
   }
 
   .details {
-    display: flex;
-    align-items: center;
-
-    .headshot {
-      position: absolute;
-      left: 56%;
-      right: auto;
-      bottom: 0;
-      background-color: $white;
-      border-radius: 20px;
-      z-index: 10;
-
-      &:hover {
-        transform: rotate(0deg) !important;
-      }
-
-      @media (max-width: $responsive-width) {
-        right: 0;
-        bottom: -10px;
-        left: 0;
-        transform: rotate(0deg);
-        border-radius: 0px;
-      }
-
-      .border {
-        position: relative;
-        padding: 30px;
-
-        @media (max-width: $responsive-width) {
-          padding: 20px;
-        }
-
-        img {
-          max-height: 300px;
-
-          @media (max-width: $responsive-width) {
-            max-height: unset;
-            width: 100%;
-          }
-        }
-      }
-
-      &.before-enter {
-        transform: translateX(4em) rotate(0);
-        opacity: 0;
-
-        @media (max-width: $responsive-width) {
-          transform: translateY(4em) rotate(0);
-        }
-      }
-
-      &.enter {
-        opacity: 1;
-        transition: opacity 1s linear,
-          transform 2s cubic-bezier(0.2, 0.5, 0.1, 1), 0.25s ease-in;
-        transform: translateX(0) rotate(5deg);
-
-        @media (max-width: $responsive-width) {
-          transform: translateX(0) rotate(0deg);
-        }
-      }
-    }
-
     .description {
-      width: 50%;
+      width: 100%;
 
       @media (max-width: $responsive-width) {
         width: 100%;
