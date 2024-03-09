@@ -12,12 +12,10 @@
 
 <script>
 import ToggleSlider from "@/components/ToggleSlider.vue";
-import CookiesMixin from "@/helpers/cookies.js";
 
 export default {
   name: "Nav",
   computed: {},
-  mixins: [CookiesMixin],
   data() {
     return {
       scrolled: false,
@@ -29,7 +27,7 @@ export default {
     this.handleScroll();
     window.addEventListener("scroll", this.handleScroll, true);
 
-    this.toggleDarkMode(this.getCookie("dark-mode") === "true");
+    this.toggleDarkMode(localStorage.getItem("darkMode") === "true");
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll, true);
@@ -41,7 +39,7 @@ export default {
     },
     toggleDarkMode(toggle) {
       this.is_toggled = toggle;
-      this.setCookie("dark-mode", this.is_toggled);
+      localStorage.setItem("darkMode", this.is_toggled);
       if (this.is_toggled) {
         document.documentElement.className = "dark";
       } else {
@@ -52,7 +50,8 @@ export default {
       let nav = document.getElementById("nav");
       let headingText = document.getElementById("heading-text");
       if (headingText && nav) {
-        let headingPosition = headingText.getBoundingClientRect().top + window.scrollY;
+        let headingPosition =
+          headingText.getBoundingClientRect().top + window.scrollY;
         let navPosition = nav.getBoundingClientRect().bottom + window.scrollY;
         return headingPosition - navPosition;
       } else {
