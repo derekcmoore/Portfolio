@@ -31,7 +31,7 @@ export default {
         "Established and continued communication with partners and customers when implementing changes",
         "Co-led a discovery initiative in application questionnaires and processes",
         "Implemented A/B testing framework and conducted tests to determine customer impact and conversion rates",
-        "Aided in the hiring process by conducting technical and cultural fit interviews",
+        "Aided in the hiring process by conducting over ten technical and cultural fit interviews",
         "Developed new features and maintained multiple services and company gems",
         "Regularly facilitated architecture discussions to ensure any changes followed company standards and best practices",
         "Mentored over five software engineers to ensure their proper career growth",
