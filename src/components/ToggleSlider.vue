@@ -66,8 +66,8 @@ img {
   }
 
   &.sun {
-    filter: invert(67%) sepia(11%) saturate(4016%) hue-rotate(354deg)
-      brightness(99%) contrast(93%);
+    filter: invert(90%) sepia(20%) saturate(6399%) hue-rotate(342deg)
+      brightness(98%) contrast(108%);
   }
 }
 
