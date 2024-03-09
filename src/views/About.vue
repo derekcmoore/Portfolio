@@ -95,11 +95,6 @@ export default {
     .description {
       width: 100%;
 
-      @media (max-width: $responsive-width) {
-        width: 100%;
-        padding-bottom: 75%;
-      }
-
       &.before-enter {
         transform: translateX(-4em);
         opacity: 0;
