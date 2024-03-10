@@ -9,10 +9,16 @@
 
 <script>
 import Nav from "@/components/Nav.vue";
+import { logEvent } from "firebase/analytics";
 
 export default {
   components: {
     Nav,
+  },
+  created() {
+    logEvent(this.$analytics, "page_view", {
+      env: process.env.NODE_ENV,
+    });
   },
 };
 </script>
@@ -35,7 +41,8 @@ export default {
   --grey: #848c90;
   --heading-bg: url("~@/assets/img/heading-bg-dark.svg");
   --black-rgb: 256 256 256;
-  --image-filter: invert(61%) sepia(6%) saturate(269%) hue-rotate(155deg) brightness(97%) contrast(85%);
+  --image-filter: invert(61%) sepia(6%) saturate(269%) hue-rotate(155deg)
+    brightness(97%) contrast(85%);
 }
 
 body {
