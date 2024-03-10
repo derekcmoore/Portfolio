@@ -47,7 +47,7 @@ export default {
 
   h4 {
     font-size: 1.3rem;
-    color: $grey;
+    color: $font-color;
     font-weight: 600;
   }
 

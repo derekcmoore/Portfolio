@@ -22,7 +22,7 @@ export default {
   --white: #ffffff;
   --off-white: #f0f2fb;
   --font-color: #263238;
-  --grey: #494e50;
+  --grey: #7b8386;
   --heading-bg: url("~@/assets/img/heading-bg.svg");
   --black-rgb: 0 0 0;
   --image-filter: none;
@@ -32,10 +32,10 @@ export default {
   --white: #151515;
   --off-white: #202124;
   --font-color: #bdc1c6;
-  --grey: #6f7476;
+  --grey: #848c90;
   --heading-bg: url("~@/assets/img/heading-bg-dark.svg");
   --black-rgb: 256 256 256;
-  --image-filter: invert(35%);
+  --image-filter: invert(61%) sepia(6%) saturate(269%) hue-rotate(155deg) brightness(97%) contrast(85%);
 }
 
 body {

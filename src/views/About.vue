@@ -68,7 +68,7 @@ export default {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 6s linear infinite;
+    animation: textclip 15s linear infinite;
     animation-direction: reverse;
     display: inline-block;
     font-weight: 500;
