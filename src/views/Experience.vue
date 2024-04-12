@@ -30,6 +30,7 @@ export default {
         "Reconstructed the checkout experience and cross-selling of products",
         "Established and continued communication with partners and customers when implementing changes",
         "Co-led a discovery initiative in application questionnaires and processes",
+        "Refactored third party API integrations resulting in decreased page load times of 60%",
         "Implemented A/B testing framework and conducted tests to determine customer impact and conversion rates",
         "Aided in the hiring process by conducting over ten technical and cultural fit interviews",
         "Developed new features and maintained multiple services and company gems",
