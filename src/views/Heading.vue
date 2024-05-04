@@ -54,6 +54,7 @@ export default {
   .text-bg {
     padding: 0 0.15em;
     color: $white;
+    border-radius: 5px;
 
     &.before-enter {
       box-shadow: 0 0 0 $font-color inset, 0 0 0 $font-color inset;
