@@ -24,10 +24,9 @@ export default {
   },
   components: { ToggleSlider },
   created() {
+    this.toggleDarkMode(localStorage.getItem("darkMode") === "true");
     this.handleScroll();
     window.addEventListener("scroll", this.handleScroll, true);
-
-    this.toggleDarkMode(localStorage.getItem("darkMode") === "true");
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll, true);
@@ -36,6 +35,7 @@ export default {
     handleScroll() {
       let distance = this.getRelativeScrollHeight();
       this.scrolled = distance <= 0;
+      this.setThemeColor();
     },
     toggleDarkMode(toggle) {
       this.is_toggled = toggle;
@@ -45,6 +45,7 @@ export default {
       } else {
         document.documentElement.className = "";
       }
+      this.setThemeColor();
     },
     getRelativeScrollHeight() {
       let nav = document.getElementById("nav");
@@ -57,6 +58,14 @@ export default {
       } else {
         return 100;
       }
+    },
+    setThemeColor() {
+      let isDarkMode = localStorage.getItem("darkMode") === "true";
+      let color = isDarkMode ? "#151515" : "#ffffff";
+      if (!this.scrolled) {
+        color = isDarkMode ? " #0038A1" : "#1B6BFF";
+      }
+      document.querySelector("meta[name='theme-color']").content = color;
     },
   },
 };
